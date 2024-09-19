@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "mission_sections",
+  "info": {
+    "singularName": "mission-section",
+    "pluralName": "mission-sections",
+    "displayName": "Page Apropos - Section Mission",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titre": {
+      "type": "string"
+    },
+    "Accordeon": {
+      "displayName": "Accordéon",
+      "type": "component",
+      "repeatable": true,
+      "component": "component-apropos.accordeon"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_component_apropos_listes",
+  "info": {
+    "displayName": "Liste"
+  },
+  "options": {},
+  "attributes": {
+    "Items": {
+      "type": "string"
+    }
+  }
+}

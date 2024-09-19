@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bread_crumbs",
+  "info": {
+    "singularName": "bread-crumb",
+    "pluralName": "bread-crumbs",
+    "displayName": "Page - Section BreadCrumb",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titre": {
+      "type": "string"
+    },
+    "ImageDeFond": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "BreadCrumbsLiens": {
+      "displayName": "BreadCrumbsLiens",
+      "type": "component",
+      "repeatable": true,
+      "component": "component-breadcrumb.bread-crumbs-liens"
+    },
+    "Page": {
+      "type": "enumeration",
+      "enum": [
+        "Formations",
+        "Details Formation",
+        "Reservation",
+        "Evenements",
+        "Details Evenement",
+        "A Propos",
+        "Contact",
+        "Donation"
+      ]
+    }
+  }
+}

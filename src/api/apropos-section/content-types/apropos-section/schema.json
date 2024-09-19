@@ -1,0 +1,55 @@
+{
+  "kind": "singleType",
+  "collectionName": "apropos_sections",
+  "info": {
+    "singularName": "apropos-section",
+    "pluralName": "apropos-sections",
+    "displayName": "Page Acceuil - Section Apropos",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "TitrePrincipal": {
+      "type": "string"
+    },
+    "SousTitre": {
+      "type": "string"
+    },
+    "ImageDeFond": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "ComponentApropos": {
+      "displayName": "ComponentApropos",
+      "type": "component",
+      "repeatable": true,
+      "component": "component-apropos.component-apropos"
+    },
+    "Video": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "page_acceuil": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page-acceuil.page-acceuil"
+    }
+  }
+}

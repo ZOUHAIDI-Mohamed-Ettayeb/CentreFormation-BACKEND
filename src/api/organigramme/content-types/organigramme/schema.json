@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "organigrammes",
+  "info": {
+    "singularName": "organigramme",
+    "pluralName": "organigrammes",
+    "displayName": "Page Apropos - Section Organigramme",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nom": {
+      "type": "string"
+    },
+    "Fonction": {
+      "type": "string"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

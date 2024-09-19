@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_etape_etapes",
+  "info": {
+    "displayName": "4PointsApropos",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Titre": {
+      "type": "string"
+    },
+    "Texte": {
+      "type": "string"
+    },
+    "Numero": {
+      "type": "string"
+    }
+  }
+}

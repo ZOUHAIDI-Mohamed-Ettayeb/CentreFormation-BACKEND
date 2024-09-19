@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_component_apropos_component_apropos",
+  "info": {
+    "displayName": "ComponentApropos"
+  },
+  "options": {},
+  "attributes": {
+    "Titre": {
+      "type": "string"
+    },
+    "Texte": {
+      "type": "text"
+    },
+    "Numero": {
+      "type": "integer"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "donations",
+  "info": {
+    "singularName": "donation",
+    "pluralName": "donations",
+    "displayName": "Page Donation - Liste Donation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "Laisser le choix à l'association",
+        "Aider une personne",
+        "Prendre en charge une formation"
+      ]
+    },
+    "Beneficiary": {
+      "type": "string"
+    },
+    "Amount": {
+      "type": "decimal"
+    },
+    "DonorName": {
+      "type": "string"
+    },
+    "DonorSurname": {
+      "type": "string"
+    },
+    "DonorEmail": {
+      "type": "email"
+    },
+    "DonorPhone": {
+      "type": "string"
+    },
+    "Formation": {
+      "type": "string"
+    }
+  }
+}

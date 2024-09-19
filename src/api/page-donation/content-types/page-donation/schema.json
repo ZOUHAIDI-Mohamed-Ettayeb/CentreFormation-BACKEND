@@ -1,0 +1,59 @@
+{
+  "kind": "singleType",
+  "collectionName": "page_donations",
+  "info": {
+    "singularName": "page-donation",
+    "pluralName": "page-donations",
+    "displayName": "Page Donation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "TitrePageDonation": {
+      "type": "string"
+    },
+    "SousTitrePageDonation": {
+      "type": "string"
+    },
+    "TextePartieVirement": {
+      "type": "text"
+    },
+    "IntituleCompte": {
+      "type": "string"
+    },
+    "NomBanque": {
+      "type": "string"
+    },
+    "CodeIBAN": {
+      "type": "string"
+    },
+    "TextePartieCheque": {
+      "type": "text"
+    },
+    "Adresse": {
+      "type": "string"
+    },
+    "Telephone": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "NumeroCompte": {
+      "type": "string"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

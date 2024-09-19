@@ -1,0 +1,38 @@
+{
+  "kind": "singleType",
+  "collectionName": "partenaire_sections",
+  "info": {
+    "singularName": "partenaire-section",
+    "pluralName": "partenaire-sections",
+    "displayName": "Page Acceuil - Section Partenaire",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titre": {
+      "type": "string"
+    },
+    "SousTitre": {
+      "type": "string"
+    },
+    "Logos": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "page_acceuil": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page-acceuil.page-acceuil"
+    }
+  }
+}

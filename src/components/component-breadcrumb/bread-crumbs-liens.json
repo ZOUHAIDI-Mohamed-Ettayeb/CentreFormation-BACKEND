@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_component_breadcrumb_bread_crumbs_liens",
+  "info": {
+    "displayName": "BreadCrumbsLiens"
+  },
+  "options": {},
+  "attributes": {
+    "Texte": {
+      "type": "string"
+    },
+    "URL": {
+      "type": "string"
+    },
+    "Ordre": {
+      "type": "integer"
+    }
+  }
+}

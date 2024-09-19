@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "page_acceuils",
+  "info": {
+    "singularName": "page-acceuil",
+    "pluralName": "page-acceuils",
+    "displayName": "Page Acceuil"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "NomDeSection": {
+      "type": "string"
+    },
+    "Titre": {
+      "type": "string"
+    },
+    "SousTitre": {
+      "type": "string"
+    },
+    "Ordre": {
+      "type": "integer"
+    },
+    "Visible": {
+      "type": "boolean"
+    },
+    "page_acceuil_section_slider": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::slider.slider",
+      "mappedBy": "page_acceuil"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "temoignage_video_sections",
+  "info": {
+    "singularName": "temoignage-video-section",
+    "pluralName": "temoignage-video-sections",
+    "displayName": "Liste Temoignage Video",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nom": {
+      "type": "string"
+    },
+    "StatutSocial": {
+      "type": "string"
+    },
+    "Texte": {
+      "type": "string"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Video": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Position": {
+      "type": "integer"
+    }
+  }
+}

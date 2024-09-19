@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sliders",
+  "info": {
+    "singularName": "slider",
+    "pluralName": "sliders",
+    "displayName": "Page Acceuil - Section Slider",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Titre": {
+      "type": "string",
+      "default": "<span> </span>"
+    },
+    "Texte": {
+      "type": "text"
+    },
+    "TexteBouton": {
+      "type": "string"
+    },
+    "LienPage": {
+      "type": "enumeration",
+      "enum": [
+        "/contact",
+        "/a_propos",
+        "/formations"
+      ]
+    },
+    "page_acceuil": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page-acceuil.page-acceuil",
+      "inversedBy": "page_acceuil_section_slider"
+    }
+  }
+}

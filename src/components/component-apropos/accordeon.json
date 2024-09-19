@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_component_apropos_accordeons",
+  "info": {
+    "displayName": "Accordéon",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Titre": {
+      "type": "string"
+    },
+    "Contenu": {
+      "type": "text"
+    },
+    "ContenuListe": {
+      "type": "richtext"
+    }
+  }
+}

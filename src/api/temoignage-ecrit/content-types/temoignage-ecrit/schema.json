@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "temoignage_ecrits",
+  "info": {
+    "singularName": "temoignage-ecrit",
+    "pluralName": "temoignage-ecrits",
+    "displayName": "Liste Temoignage Ecrit",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Texte": {
+      "type": "text"
+    },
+    "Nom": {
+      "type": "string"
+    },
+    "StatutSocial": {
+      "type": "string"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Position": {
+      "type": "integer"
+    }
+  }
+}

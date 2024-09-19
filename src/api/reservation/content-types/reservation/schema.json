@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reservations",
+  "info": {
+    "singularName": "reservation",
+    "pluralName": "reservations",
+    "displayName": "Liste Reservation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "NomComplet": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Email": {
+      "type": "email",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "formation": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::formation.formation"
+    },
+    "Telephone": {
+      "type": "integer",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Validite": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "boolean",
+      "default": false,
+      "private": true
+    }
+  }
+}
